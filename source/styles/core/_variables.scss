@@ -1,0 +1,36 @@
+// Colors
+$dark-gray: #333;
+$light-gray: #ddd;
+$red: red;
+
+// Font Colors
+$font-color: $dark-gray;
+$accent-font-color: $red;
+
+// Links
+$link-color: $accent-font-color;
+$hover-link-color: darken($accent-font-color, 15);
+
+// Typography
+$font-family: "Open Sans", serif;
+$header-font-family: "Merriweather", serif;
+
+// Font Sizes
+$font-size: 1em;
+
+// Line Height
+$line-height: 1.5;
+$header-line-height: 1.25;
+
+// Border
+$border-color: $light-gray;
+$border: 1px solid $border-color;
+
+// Grid
+$total-columns: 12;
+$column-width: 60px;
+$gutter-width: 20px;
+$grid-padding: 10px;
+
+// Others
+$spacing: $line-height * 1em;

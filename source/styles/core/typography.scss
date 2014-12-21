@@ -1,0 +1,51 @@
+body {
+  color: $font-color;
+  font: normal #{$font-size}/#{$line-height} $font-family;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  @include transition(color 100ms linear);
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover { color: $hover-link-color; };
+
+  &:active, &:focus {
+    color: $hover-link-color;;
+    outline: none;
+  }
+}
+
+p { margin: 0 0 ($spacing / 2); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font-family;
+  line-height: $header-line-height;
+  margin: 0;
+}
+
+hr {
+  border: 0;
+  border-bottom: $border;
+  margin: $spacing 0;
+}
+
+img, picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+blockquote {
+  border-left: 2px solid $border-color;
+  color: lighten($font-color, 15);
+  margin: $spacing 0;
+  padding-left: $spacing / 2;
+}
+
+cite {
+  color: lighten($font-color, 25);
+  font-style: italic;
+
+  &:before { content: "\2014 \00A0"; }
+}
