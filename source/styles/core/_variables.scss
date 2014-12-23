@@ -1,7 +1,7 @@
 // Colors
 $dark-gray: #333;
 $light-gray: #ddd;
-$red: red;
+$red: #d90000;
 
 // Font Colors
 $font-color: $dark-gray;
@@ -27,10 +27,13 @@ $border-color: $light-gray;
 $border: 1px solid $border-color;
 
 // Grid
-$total-columns: 12;
-$column-width: 60px;
-$gutter-width: 20px;
-$grid-padding: 10px;
+$susy: (
+  columns: 12,
+  gutter-position: inside,
+  math: fluid,
+  output: float,
+  flow: rtl
+);
 
 // Others
 $spacing: $line-height * 1em;

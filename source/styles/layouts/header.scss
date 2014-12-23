@@ -1,0 +1,17 @@
+.layout.header {
+  background: rgba(white, 0.9);
+  box-shadow: 0 0 5px rgba(black, 0.05);
+  border-bottom: $border;
+  height: 65px;
+
+  .logo {
+    background: $red;
+    float: left;
+    margin-left: gutter();
+    width: 90px;
+  }
+
+  .navigation {
+    float: left;
+  }
+}

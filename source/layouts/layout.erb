@@ -10,9 +10,19 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <header class="layout header" role="banner">
+    <header role="banner" class="layout header">
       <div class="container">
-        Header
+        <% link_to '/', class: 'logo' do %>
+          <%= image_tag lorem.image('40x60') %>
+        <% end %>
+
+        <nav role="navigation" class="navigation">
+          <%= link_to 'Home' %>
+          <%= link_to 'Sobre' %>
+          <%= link_to 'Eventos' %>
+          <%= link_to 'Blog' %>
+          <%= link_to 'Contato' %>
+        </nav>
       </div>
     </header>
 
